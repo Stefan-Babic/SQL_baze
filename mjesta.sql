@@ -22,3 +22,6 @@ id int not null primary key auto_increment,
 first_name varchar(50),
 last_name varchar(50)
 );
+alter table opcina add foreign key(zupanija) references zupanija(id);
+alter table zupanija add foreign key(zupan) references zupan(id);
+alter table mjesto add foreign key(opcina) references opcina(id);
