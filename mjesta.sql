@@ -25,3 +25,21 @@ last_name varchar(50)
 alter table opcina add foreign key(zupanija) references zupanija(id);
 alter table zupanija add foreign key(zupan) references zupan(id);
 alter table mjesto add foreign key(opcina) references opcina(id);
+
+insert into zupan(first_name,last_name) values
+('Bozo','Galic'),
+('Ivan','Anusic'),
+('Zlatko','Komadina');
+insert into zupanija(name,zupan) values
+('Vukovarsko-srijemska',1),
+('Osjecko-baranjska',2),
+('Primorsko-goranska',3);
+insert into opcina(name,zupanija) values
+('Tompojevci',1),('Nijemci',1),
+('Gorjani',2),('Fericanci',2),
+('Dobrinj',3),('Fuzine',3);
+insert into mjesto(name,opcina) values
+('Berak',1),('cakovci',1),('deletovci',2),('Apsevci',2),
+('Gorjani',3),('Tomasanci',3),('Gazije',4),('Valenovac',4),
+('Rudine',5),('Klanice',5),('Belo Selo',6),('Vrata',6);
+
