@@ -43,3 +43,14 @@ insert into mjesto(name,opcina) values
 ('Gorjani',3),('Tomasanci',3),('Gazije',4),('Valenovac',4),
 ('Rudine',5),('Klanice',5),('Belo Selo',6),('Vrata',6);
 
+update mjesto set name='Cerna' where id=1;
+update mjesto set name='Vucjak Fericanacki' where id=7;
+update mjesto set name='Slavica' where id=11;
+update mjesto set name='Lipovac' where id=3;
+update mjesto set name='Rasopasno' where id=9;
+
+select * from mjesto;
+
+
+delete from mjesto where id>6;
+delete from opcina where id>3;
